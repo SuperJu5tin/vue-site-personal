@@ -9,10 +9,20 @@
   <script src="/javascript/index.js" type="module" defer></script>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li v-for="(link, index) in links" :class="{active: link == 'test2'}" :key="index">{{link}}</li>
+    </ul>
+  </nav>
   <div id="app">
-    <button @click="count++">
+    <button  @click="count++">
       Count is: {{ count }}
     </button>
+    <button  @click="upCount()">
+      Count is: {{ count2 }}
+    </button>
+    <p> {{randomThing}} </p>
+    <p v-html="rawHTML">this will not be seen</p>
   </div>
 </body>
 </html>
