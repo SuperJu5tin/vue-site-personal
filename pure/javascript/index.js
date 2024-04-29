@@ -23,9 +23,9 @@ Vue.createApp({
   },
 
   methods: {
-    upCount: () => {
-      count = "test"
-    }
+    upCount: function () {
+      this.count2++
+    },
   },
 
   data() {
