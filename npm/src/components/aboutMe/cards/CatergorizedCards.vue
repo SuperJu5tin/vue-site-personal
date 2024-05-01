@@ -1,18 +1,39 @@
 <script setup lang="ts">
 
+import { ref } from 'vue';
+import type { Ref } from 'vue'
 import Card from './Card.vue'
 
-defineProps<{ interest:string }>()
+const props = defineProps<{ interest:string, favorites:Array<string> }>()
+const favoritesCopy = ref(props.favorites)
 
-const favorites = ["test", "test2"]
+const popRandomFavorite = () => {
+    const randX: number = Math.floor(Math.random() * (favoritesCopy.value.length - 1))
+    console.log(randX)
+    const newFavorite: string = favoritesCopy.value[randX]
+    favoritesCopy.value.splice(randX, 1)
+    return newFavorite
+}
+
+const addFavorite = () => {
+    if (favoritesCopy.value.length <= 0) {
+        return
+    }
+    activeFavorites.value.push(popRandomFavorite())
+}
+
+const activeFavorites:Ref<Array<string>> = ref([popRandomFavorite()])
 
 </script>
 
 <template>
     
-    <h1>{{ interest }}</h1>
+    <h2>{{ interest }}</h2>
     <div class="cardHolder">
-        <Card v-for="favorite in favorites" :favorite="favorite"/>
+        <button @click="addFavorite">test</button>
+        <div>
+            <Card v-for="favorite in activeFavorites" :favorite="favorite"/>
+        </div>
     </div>
 
 </template>

@@ -1,8 +1,5 @@
 <script setup lang="ts">
 
-// import { ref } from 'vue'
-// import type { Ref } from 'vue'
-
 defineProps<{ favorite:string }>()
 
 const colors: Array<string> = ["#05b774", "#d7fedc", "#74c07a", "#40976a"]
@@ -16,8 +13,7 @@ const randFontSize = `${(Math.random() * (maxFontSize - minFontSize)) + minFontS
 
 <template>
   <div class="card">
-    <h3>{{ favorite }}</h3>
-    <!-- <p>{{randFontSize}}</p> -->
+    {{ favorite }}
   </div>
 </template>
 
@@ -32,7 +28,7 @@ const randFontSize = `${(Math.random() * (maxFontSize - minFontSize)) + minFontS
     border-radius: 10px;
     color: #555;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     transition: all .2s;
 }

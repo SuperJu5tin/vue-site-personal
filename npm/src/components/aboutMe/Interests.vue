@@ -1,52 +1,38 @@
 <script setup lang="ts">
-
   import CatergorizedCards from './cards/CatergorizedCards.vue';
+</script>
+
+<script lang="ts">
 
   type InterestObject = {
     [key:string]: Array<string>
   }
 
-  const fetchData = async (route:string) => {
-    const response = await fetch(route, {
-      method:'POST',
-    })
-    const resJson = await response.json()
-    return await resJson
+  export default {
+    data() {
+      return {
+        interests: {} as InterestObject,
+      }
+    },
+    mounted() {
+      fetch('/api/about_me/interests.json')
+        .then(res => res.json())
+        .then((data) => this.interests = data)
+        .catch(err => console.error(err.message))
+    }
   }
-
-  const interests = fetchData("/api/about_me/interests.json")
-
-  // console.log(fetchData("/api/about_me/interests.json"))
 
 </script>
 
+
+
+
 <template>
-  <!-- <Suspense> -->
-    <div class="interests">
-        <h1>TEST</h1>
-        {{ }}
-        <!-- {{ facts }} -->
-        <CatergorizedCards interest="test" />
-        <CatergorizedCards interest="test2" />
-    </div>
-
-  <!-- </Suspense> -->
-    
-
-    <!-- <div style={{
-      
-    }}>
-      <h1 className="test" >
-        My Biggest Interests
-      </h1>
-      <Box sx={{borderTop:"solid", width:"100%"}} ></Box>
-      <h2 style={{}}>{listJoinDiffLast(interestsList, ", ", " and ")}</h2>
-      {
-        interestsList.map((factType: string) => (
-          <FactCardHolder key={factType} factType={factType} />
-        ))
-      }
-    </div> -->
+  <div class="interests">
+      <h1 class="underline">My Biggest Interests</h1>
+      <CatergorizedCards v-for="interest in Object.keys(interests)" :interest="interest" :favorites="interests[interest]" />
+      <!-- <CatergorizedCards interest="test2" /> -->
+  </div>
 </template>
 
 <style scoped>
@@ -66,6 +52,12 @@
     justify-content: center;
     align-content: space-around;
     box-shadow: 3px 3px 3px 3px #555;
+}
+
+.underline {
+  padding-bottom: .1em;
+  width:100%;
+  border-bottom:solid;
 }
 
 </style>
@@ -115,6 +107,4 @@ const Interests = () => {
       }
     </Box>
   )
-}
-
-export default Interests -->
+} -->
