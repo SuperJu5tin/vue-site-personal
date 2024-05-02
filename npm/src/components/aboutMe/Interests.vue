@@ -1,5 +1,15 @@
 <script setup lang="ts">
   import CatergorizedCards from './cards/CatergorizedCards.vue';
+
+  const listJoinDiffLast = (list: Array<string>, delimiter: string, diffLast: string ) => {
+
+    const copyOfList = [...list]
+    copyOfList[copyOfList.length - 1] = diffLast + copyOfList[copyOfList.length - 1]
+    const newSentence = copyOfList.join(delimiter)
+    return newSentence
+
+  }
+
 </script>
 
 <script lang="ts">
@@ -30,8 +40,8 @@
 <template>
   <div class="interests">
       <h1 class="underline">My Biggest Interests</h1>
+      <h3> {{ listJoinDiffLast(Object.keys(interests), ", ", " and ") }} </h3>
       <CatergorizedCards v-for="interest in Object.keys(interests)" :interest="interest" :favorites="interests[interest]" />
-      <!-- <CatergorizedCards interest="test2" /> -->
   </div>
 </template>
 
@@ -61,50 +71,3 @@
 }
 
 </style>
-
-
-
-<!-- const typedCompleteInterestsObject:InterestObject = {...completeInterestsJSON}
-const interestsList = Object.keys(typedCompleteInterestsObject)
-
-const listJoinDiffLast = (list: Array<string>, delimiter: string, diffLast: string ) => {
-
-  let copyOfList = [...list]
-  copyOfList[copyOfList.length - 1] = diffLast + copyOfList[copyOfList.length - 1]
-  let newSentence = copyOfList.join(delimiter)
-  return newSentence
-
-}
-
-const Interests = () => {
-
-  return (
-    <Box sx={{
-      height:"fit-content",
-      width:"max(300px, 30vw)",
-      padding:"20px",
-      display:"flex",
-      flexDirection:"column",
-      flexWrap:"wrap",
-      backgroundColor:"#78c3a7",
-      color:"#555",
-      borderRadius:"30px",
-      border:"solid",
-      rotate:"-2deg",
-      justifyContent:"center",
-      alignContent:"space-around",
-      boxShadow:"3px 3px 3px 3px #555"
-    }}>
-      <h1 className="test" >
-        My Biggest Interests
-      </h1>
-      <Box sx={{borderTop:"solid", width:"100%"}} ></Box>
-      <h2 style={{}}>{listJoinDiffLast(interestsList, ", ", " and ")}</h2>
-      {
-        interestsList.map((factType: string) => (
-          <FactCardHolder key={factType} factType={factType} />
-        ))
-      }
-    </Box>
-  )
-} -->
