@@ -1,11 +1,11 @@
-<!-- <script setup>
+<script setup>
 
-</script> -->
+</script>
 
 <template>
   <div>
     <p >
-      {name}
+      {name} 
     </p>
   </div>
   <div>
