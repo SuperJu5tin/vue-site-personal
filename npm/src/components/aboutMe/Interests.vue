@@ -27,7 +27,7 @@
     mounted() {
       fetch('/api/about_me/interests.json')
         .then(res => res.json())
-        .then((data) => this.interests = data)
+        .then(data => this.interests = data)
         .catch(err => console.error(err.message))
     }
   }
@@ -62,6 +62,7 @@
     justify-content: center;
     align-content: space-around;
     box-shadow: 3px 3px 3px 3px #555;
+    
 }
 
 .underline {

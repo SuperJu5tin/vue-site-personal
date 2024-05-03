@@ -1,32 +1,59 @@
-<script setup>
+<script setup lang="ts">
+
+type Skill = {
+  name:string,
+  level:string,
+  numericPercent:number
+}
+
+const props = defineProps<{ skill:Skill }>()
+const percent = `${props.skill.numericPercent + 3}%`
 
 </script>
 
 <template>
-  <div>
+  <!-- <div class="skill-container"> -->
+  <div class="skill-name">
     <p >
-      {name} 
+      {{skill.name}} 
     </p>
   </div>
-  <div>
+  <div class="skill-level">
     <p>
-      : {level}
+      {{skill.level}}
     </p>
   </div>
+  <!-- </div> -->
   <div class="skill-bar">
     <div class="skill-bar-filled"></div>  
   </div>
+  
 </template>
 
 <style scoped>
 
-.skill-name {
-  grid-column: 1;
+.skill-container {
+  display: grid;
+  grid-template-columns: .5fr .1rem 1fr;
+  align-items: center;
+}
 
+.skill-name {
+  justify-self: right;
+  /* margin-right: .2rem; */
+}
+
+.skill-level {
+  text-align: left;
+  padding-inline: .3rem;
+  border-left:dotted 1px;
+  border-right:dotted 1px;
+  /* margin-left: .2rem; */
 }
 
 .skill-bar {
-  margin-left: 10px;
+  flex: 1;
+  /* margin-left: .3rem; */
   height: 20px;
   background-color: #d7fedc;
   border-radius: 10px;
@@ -34,7 +61,7 @@
 }
 
 .skill-bar-filled {
-  /* width:`${percent+2}%`, */
+  width:v-bind(percent);
   height: 20px;
   background-color: green;
 }

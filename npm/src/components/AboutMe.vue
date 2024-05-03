@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 import Interests from './aboutMe/Interests.vue';
+import Notes from './aboutMe/Notes.vue';
 import Skills from './aboutMe/Skills.vue';
 
 
@@ -9,8 +10,10 @@ import Skills from './aboutMe/Skills.vue';
 
 <template>
   <div class="about-me">
-      
-      <Skills />
+      <div class="smaller-boxes">
+        <Skills />
+        <Notes />
+      </div>
 
       <Interests />
         
@@ -22,7 +25,20 @@ import Skills from './aboutMe/Skills.vue';
 
 .about-me {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  padding-inline: 5vw;
+  padding-block: 50px;
+  gap: 5rem;
+}
+
+.smaller-boxes {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+  align-items: center;
+  justify-items: center;
+  gap: 5rem;
 }
 
 

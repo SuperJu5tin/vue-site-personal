@@ -2,31 +2,31 @@
     {
       "name": "Javascript",
       "level": "Lower-Intermediate",
-      "percent": 50
+      "numericPercent": 50
     },
     {
       "name": "Python",
       "level": "Lower-Intermediate",
-      "percent": 50
+      "numericPercent": 50
     },
     {
       "name": "C",
       "level": "Beginner",
-      "percent": 40
+      "numericPercent": 40
     },
     {
       "name": "C++",
       "level": "Beginner",
-      "percent": 20
+      "numericPercent": 20
     },
     {
       "name": "Rust",
       "level": "Beginner",
-      "percent": 30
+      "numericPercent": 30
     },
     {
       "name": "Java",
       "level": "Beginner",
-      "percent": 30
+      "numericPercent": 30
     }
   ]

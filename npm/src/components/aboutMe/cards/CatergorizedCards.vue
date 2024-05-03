@@ -20,6 +20,7 @@ const addFavorite = () => {
       return
    }
    activeFavorites.value.push(popRandomFavorite())
+   
 }
 
 const activeFavorites:Ref<Array<string>> = ref([popRandomFavorite()])

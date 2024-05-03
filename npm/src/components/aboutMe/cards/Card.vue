@@ -31,13 +31,23 @@ const randFontSize = `${(Math.random() * (maxFontSize - minFontSize)) + minFontS
   text-align: center;
   cursor:default;
   transition: all .2s;
+  animation: slidein 5s; 
 }
 
 .card:hover {
   scale: 1.3;
-  transform: translate(-5px);
   text-shadow: 1px 1px 2px #222, 0 0 25px white, 0 0 5px #888;
   box-shadow: 5px 5px 5px black;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(25vw);
+  }
+
+  30% {
+    transform: translateX(0);
+  }
 }
 
 </style>
