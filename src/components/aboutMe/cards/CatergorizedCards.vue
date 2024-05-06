@@ -24,7 +24,6 @@ const checkCards = () => {
   const favoriteLocalStorage = localStorage.getItem(interestName.value)
   if (favoriteLocalStorage === null) {
     addFavorite()
-    localStorage.setItem(interestName.value, JSON.stringify(activeFavorites.value))
   } else {
     activeFavorites.value = JSON.parse(favoriteLocalStorage)
     favoritesCopy.value = favoritesCopy.value.filter(favorite => !activeFavorites.value.includes(favorite))
