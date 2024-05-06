@@ -1,53 +1,46 @@
 <script setup lang="ts">
   import CatergorizedCards from './cards/CatergorizedCards.vue';
 
+  import { ref } from 'vue';
+  import type { Ref } from 'vue'
+
+  type InterestObject = {
+    [key:string]: Array<string>
+  }
+
+ const interests: Ref<InterestObject> = ref({})
+ const localStorageUpdates:Ref<boolean> = ref(false)
+
+  const clearLocalStorage = () => {
+    localStorage.clear()
+    localStorageUpdates.value = localStorageUpdates.value ? false : true
+  }
+
   const listJoinDiffLast = (list: Array<string>, delimiter: string, diffLast: string ) => {
 
     const copyOfList = [...list]
     copyOfList[copyOfList.length - 1] = diffLast + copyOfList[copyOfList.length - 1]
     const newSentence = copyOfList.join(delimiter)
     return newSentence
-
-  }
-</script>
-
-<script lang="ts">
-
-  type InterestObject = {
-    [key:string]: Array<string>
   }
 
-  export default {
-    data() {
-      return {
-        interests: {} as InterestObject,
-      }
-    },
-    methods: {
-      clearLocalStorage() {
-        localStorage.clear()
-        this.$emit("clearLocalStorage")
-      }
-    },
-    mounted() {
-      fetch('/api/about_me/interests.json')
-        .then(res => res.json())
-        .then(data => this.interests = data)
-        .catch(err => console.error(err.message))
-    }
+  const initializeInterest = () => {
+    fetch('/api/about_me/interests.json')
+      .then(res => res.json())
+      .then(data => interests.value = data)
+      .catch(err => console.error(err.message))
   }
+
+  initializeInterest()
 
 </script>
-
-
-
 
 <template>
   <div class="interests">
       <h1 class="underline">My Biggest Interests</h1>
       <h3> {{ listJoinDiffLast(Object.keys(interests), ", ", " and ") }} </h3>
-      <button class="button-one" @click="clearLocalStorage" >test</button>
-      <CatergorizedCards v-for="interest in Object.keys(interests)" :interest="interest" :favorites="interests[interest]" />
+      <button class="button-one" @click="clearLocalStorage" >Rediscover Favorites</button>
+      <CatergorizedCards v-for="interest in Object.keys(interests)" :interest="interest" :favorites="interests[interest]" :updates="localStorageUpdates" />
   </div>
 </template>
 

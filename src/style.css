@@ -67,6 +67,11 @@ button:hover {
   scale: 1.1;
 }
 
+.button-one:active {
+  background-color: #9a3ac1;
+  scale: 1.05;
+}
+
 .button-two {
   border: none;
   border-bottom: solid 1px;
