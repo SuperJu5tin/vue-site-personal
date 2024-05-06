@@ -5,8 +5,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #555555;
-  background: linear-gradient(to top right, rgb(40, 189, 139) 50%, #00d4ff);
+  color: #444;
+  background: linear-gradient(to top right, rgb(40, 189, 139) 40%, #00d4ff);
   font-family: 'Indie Flower', Caveat, cursive;
   font-weight: 400;
   font-size: 1.15em;

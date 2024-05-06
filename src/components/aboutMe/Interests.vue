@@ -9,7 +9,6 @@
     return newSentence
 
   }
-
 </script>
 
 <script lang="ts">
@@ -22,6 +21,12 @@
     data() {
       return {
         interests: {} as InterestObject,
+      }
+    },
+    methods: {
+      clearLocalStorage() {
+        localStorage.clear()
+        this.$emit("clearLocalStorage")
       }
     },
     mounted() {
@@ -41,6 +46,7 @@
   <div class="interests">
       <h1 class="underline">My Biggest Interests</h1>
       <h3> {{ listJoinDiffLast(Object.keys(interests), ", ", " and ") }} </h3>
+      <button class="button-one" @click="clearLocalStorage" >test</button>
       <CatergorizedCards v-for="interest in Object.keys(interests)" :interest="interest" :favorites="interests[interest]" />
   </div>
 </template>
@@ -55,13 +61,12 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #78c3a7;
-    color: #555;
     border-radius: 30px;
     border: solid;
     rotate: -2deg;
     justify-content: center;
     align-content: space-around;
-    box-shadow: 3px 3px 3px 3px #555;
+    box-shadow: -3px 3px 3px 3px #555;
     
 }
 

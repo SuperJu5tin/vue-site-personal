@@ -49,7 +49,6 @@ export default {
     height:fit-content;
     width: fit-content;
     background-color:#78c3a7;
-    color:#555;
     border-radius:30px;
     border:solid;
     box-shadow:3px 3px 3px 3px #555;

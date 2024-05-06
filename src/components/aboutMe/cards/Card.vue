@@ -26,7 +26,6 @@ const randFontSize = `${(Math.random() * (maxFontSize - minFontSize)) + minFontS
   font-size: v-bind(randFontSize);
   border: solid 1px;
   border-radius: 10px;
-  color: #555;
   background-color: v-bind(colors[randColor]);
   text-align: center;
   cursor:default;
