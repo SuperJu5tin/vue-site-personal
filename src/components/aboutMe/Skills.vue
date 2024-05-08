@@ -1,34 +1,30 @@
 <script setup lang="ts">
 
-import Skill from './skills/Skill.vue';
+  import { ref } from 'vue';
+  import type { Ref } from 'vue'
+  import Skill from './skills/Skill.vue';
 
-</script>
+  type Skill = {
+    name:string,
+    level:string,
+    numericPercent:number
+  }
 
-<script lang="ts">
+  type Skills = {
+    [key:string]: Skill
+  }
 
-type Skill = {
-  name:string,
-  level:string,
-  numericPercent:number
-}
+  const skills:Ref<Skills> = ref({})
+    
 
-type Skills = {
-  [key:string]: Skill
-}
-
-export default {
-  data() {
-    return {
-      skills: {} as Skills
-    }
-  },
-  mounted() {
+  const initializeSkills = () => {
     fetch('/api/about_me/skills.json')
       .then(res => res.json())
-      .then(data => this.skills = data)
+      .then(data => skills.value = data)
       .catch(err => console.error(err.message))
-  },
-}
+  }
+
+  initializeSkills()
 
 </script>
 

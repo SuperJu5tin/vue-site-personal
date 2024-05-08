@@ -57,36 +57,43 @@ button:hover {
 .button-one {
   border: none;
   border-radius: 5px;
-  background-color: #e2b3f4;
+  color: #eee;
+  background-color: #7188ee;
   width: fit-content;
   height: fit-content;
 }
 
 .button-one:hover {
-  background-color: #ce75f1;
+  color: #ddd;
+  background-color: #112681;
   transform: translate(.5em);
   box-shadow: -.5em 2.5px 5px black;
   scale: 1.1;
 }
 
 .button-one:active {
-  background-color: #9a3ac1;
+  color: #ccc;
+  background-color: #041045;
   scale: 1.05;
 }
 
 .button-two {
   border: none;
   border-bottom: solid 1px;
-  color: #b255ff;
-  background-color: rgba(76, 175, 80, 0.0)
+  color: #237ce7;
+  background-color: rgba(76, 175, 80, 0.0);
+  padding: 2.5px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .button-two:hover {
-  border-color: #1793f2;
-  background: linear-gradient(rgba(76, 175, 80, 0.0) 60%, #5fc1eb);
+  border-color: #47a381;
+  background: linear-gradient(rgba(76, 175, 80, 0.0) 70%, #5fe1b1);
 }
 
 .button-two:active {
+  color: #0d4573;
   transform: translateY(.25em);
 }
 

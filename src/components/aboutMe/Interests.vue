@@ -60,7 +60,7 @@
     justify-content: center;
     align-content: space-around;
     box-shadow: -3px 3px 3px 3px #555;
-    
+    gap: 1rem;
 }
 
 .underline {
