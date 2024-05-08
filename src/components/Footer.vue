@@ -5,7 +5,7 @@
 <template>
   <footer>
     <div class="footer">
-      <div class="footer-item-one ">
+      <div class="footer-item-one">
         <h4>All Rights Reserved @ 2024 justinlibhart.xyz</h4>
       </div>
       <div>
@@ -25,10 +25,11 @@
 <style scoped>
 
 .footer {
-  margin-top:100px;
+  /* margin-top:100px; */
   padding:1vmax;
   height:fit-content;
-  background:#777;
+  color: #111;
+  background-color:#777;
   border:solid 2px;
   display:grid;
   grid-template-columns:1fr 1fr;

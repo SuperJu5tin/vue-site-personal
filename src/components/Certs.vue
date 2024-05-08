@@ -23,7 +23,7 @@
 <style scoped>
 
 .professional-container {
-  margin-top:50px;
+  margin-block:50px;
   display:flex;
   flex-direction:column;
   justify-items:center;
