@@ -34,10 +34,13 @@ import Skills from './aboutMe/Skills.vue';
 }
 
 .smaller-boxes {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   /* grid-template-rows: 1fr 1fr; */
   align-items: center;
+  align-content: space-evenly;
   justify-items: center;
+  justify-content: space-evenly;
   gap: 5rem;
 }
 
