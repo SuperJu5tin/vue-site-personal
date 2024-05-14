@@ -38,7 +38,7 @@ const randFontSize = `${(Math.random() * (maxFontSize - minFontSize)) + minFontS
 
 .card:hover {
   scale: 1.3;
-  text-shadow: 1px 1px 2px #222, 0 0 1rem #2e0099, 0 0 5px #888;
+  text-shadow: 1px 1px 2px #222, 0 0 5px #ffffff;
   box-shadow: 5px 5px 5px black;
 }
 

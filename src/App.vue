@@ -5,8 +5,10 @@ import BetweenPage from './components/BetweenPage.vue';
 import Home from './components/Home.vue';
 import NavBar from './components/NavBar.vue';
 import Certs from './components/Certs.vue';
-import Footer from './components/Footer.vue';
-const colors = ['#89aedf', '#89dbdf','#9cdf89']
+import Foot from './components/Foot.vue';
+import Portfolio from './components/Portfolio.vue';
+
+const colors = ['#89aedf', '#89dbdf','#9cdf89'];
 
 </script>
 
@@ -15,7 +17,9 @@ const colors = ['#89aedf', '#89dbdf','#9cdf89']
   <Home />
   <BetweenPage name='about-me' :color='colors[0]' />
   <AboutMe />
+  <BetweenPage name='portfolio' :color='colors[1]' />
+  <Portfolio />
   <BetweenPage name="certifications" :color='colors[2]' />
   <Certs />
-  <Footer />
+  <Foot />
 </template>
