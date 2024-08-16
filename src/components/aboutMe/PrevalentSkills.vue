@@ -4,14 +4,14 @@
   import type { Ref } from 'vue'
   import Skill from './skills/Skill.vue';
 
-  type Skill = {
+  type SkillType = {
     name:string,
     level:string,
     numericPercent:number
   }
 
   type Skills = {
-    [key:string]: Skill
+    [key:string]: SkillType
   }
 
   const skills:Ref<Skills> = ref({})
@@ -32,7 +32,7 @@
   <div class="skills">
       <h1 class="skills-header">Skills</h1>
       <div class="skills-container">
-        <Skill v-for="skill in skills" :skill="skill" />
+        <Skill v-for="skill in skills" :key="skill.name" :skill="skill" />
       </div>
 
     </div>

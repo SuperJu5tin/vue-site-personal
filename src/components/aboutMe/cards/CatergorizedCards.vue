@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-import { ref, watch } from 'vue';
+import { ref, watch, defineProps } from 'vue';
 import type { Ref } from 'vue'
-import Card from './Card.vue'
+import CardPreset from './CardPreset.vue';
 
 const props = defineProps<{ interest:string, favorites:Array<string>, updates:boolean }>()
 const interestName:Ref<string> = ref(props.interest)
@@ -41,12 +41,16 @@ checkCards()
 </script>
 
 <template>
-  <div class="interest-holder">
-      <button @clearLocalStorage="checkCards" @click="addFavorite" class="button-styled button-two">Discover {{ interest }} Favorites ({{ activeFavorites.length }}/{{ favorites.length }})</button>
-      <div class="card-holder">
-        <Card v-for="favorite in activeFavorites" :favorite="favorite"/>
-      </div>
-  </div>
+  <!-- <v-row class="mx-4"> -->
+    <v-row class="my-5">
+      <v-btn color="primary" variant="plain" @clearLocalStorage="checkCards" @click="addFavorite" class="button-styled button-two">Discover {{ interest }} Favorites ({{ activeFavorites.length }}/{{ favorites.length }})</v-btn>
+    </v-row>
+    <!-- <v-row class="my-10 d-flex justify-center align-center"> -->
+    <v-row class="justify-center ga-5">
+      <CardPreset v-for="favorite in activeFavorites" :key="favorite" :favorite="favorite"/>
+    </v-row>
+    <!-- </v-row> -->
+  <!-- </v-row> -->
     
 
 </template>
@@ -72,12 +76,6 @@ checkCards()
 
 .cardHolder:hover .card:not(:hover) {
    scale: .7;
-}
-
-.button-styled {
-   margin-top:10px;
-   margin-left:5px;
-   justify-self: start;
 }
 
 </style>

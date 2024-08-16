@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-    import CC from '../../assets/cc.svg'
+  import CC from '@/assets/cc.svg'
 
 </script>
 

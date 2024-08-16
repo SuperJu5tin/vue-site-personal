@@ -1,48 +1,25 @@
 <script setup lang="ts">
 
-import Interests from './aboutMe/Interests.vue';
-import Notes from './aboutMe/Notes.vue';
-import Skills from './aboutMe/Skills.vue';
+import AboutInterests from './aboutMe/AboutInterests.vue';
+import NotesAboutMe from './aboutMe/NotesAboutMe.vue';
+import PrevalentSkills from './aboutMe/PrevalentSkills.vue';
 
 
 
 </script>
 
 <template>
-  <div class="about-me">
-      <div class="smaller-boxes">
-        <Skills />
-        <Notes />
-      </div>
-
-      <Interests />
-        
-  </div>
+  <v-row class="ga-10 my-10 px-10">
+    <v-col>
+      <v-row class="ga-10 justify-center">
+        <PrevalentSkills />
+        <NotesAboutMe />
+      </v-row>
+    </v-col>
+    <v-col>
+      <v-row class="justify-center">
+        <AboutInterests />
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
-
-
-<style scoped>
-
-.about-me {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  padding-inline: 5vw;
-  padding-block: 50px;
-  gap: 5rem;
-}
-
-.smaller-boxes {
-  display: flex;
-  flex-direction: column;
-  /* grid-template-rows: 1fr 1fr; */
-  align-items: center;
-  align-content: space-evenly;
-  justify-items: center;
-  justify-content: space-evenly;
-  gap: 5rem;
-}
-
-
-</style>
