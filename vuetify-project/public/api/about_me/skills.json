@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Javascript",
+      "level": "Lower-Intermediate",
+      "numericPercent": 50
+    },
+    {
+      "name": "Python",
+      "level": "Lower-Intermediate",
+      "numericPercent": 50
+    },
+    {
+      "name": "C",
+      "level": "Beginner",
+      "numericPercent": 40
+    },
+    {
+      "name": "C++",
+      "level": "Beginner",
+      "numericPercent": 20
+    },
+    {
+      "name": "Rust",
+      "level": "Beginner",
+      "numericPercent": 30
+    },
+    {
+      "name": "Java",
+      "level": "Beginner",
+      "numericPercent": 30
+    }
+  ]
