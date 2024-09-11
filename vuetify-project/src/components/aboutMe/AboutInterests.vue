@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import CatergorizedCards from './cards/CatergorizedCards.vue'
 
   import { ref } from 'vue'
   import type { Ref } from 'vue'
@@ -39,7 +38,7 @@
     <v-container>
       <v-row class="text-h3 justify-center my-3">My Biggest Interests</v-row>
       <v-divider class="my-5" thickness="3" />
-      <v-row class="text-h5 justify-center my-3">{{ listJoinDiffLast(Object.keys(interests), ", ", " and ") }}</v-row>
+      <v-row class="text-subtitle-1 justify-center my-3">{{ listJoinDiffLast(Object.keys(interests), ", ", " and ") }}</v-row>
       <v-row class="justify-center my-3">
         <v-btn color="primary" @click="clearLocalStorage">Rediscover Favorites</v-btn>
       </v-row>
