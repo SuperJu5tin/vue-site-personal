@@ -11,5 +11,5 @@
   <Portfolio />
   <BetweenPage name="certifications" />
   <Certs />
-  <AppFooter />
+  <!-- <AppFooter /> -->
 </template>
