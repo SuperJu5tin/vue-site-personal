@@ -9,7 +9,7 @@
 <template>
   <v-row class="ga-10 my-10 px-10">
     <v-col>
-      <v-row class="ga-10 justify-center">
+      <v-row class="ga-10 justify-space-evenly">
         <PrevalentSkills />
         <NotesAboutMe />
       </v-row>

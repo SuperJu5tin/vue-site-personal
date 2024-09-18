@@ -7,7 +7,7 @@
 <template>
   <v-card class="pa-3 rounded-lg elevation-15">
     <v-container>
-      <v-row class="text-h3 justify-center my-2">Noteable Feats</v-row>
+      <v-row class="text-h3 justify-center my-1">Noteable Feats</v-row>
       <v-divider class="my-5" thickness="3" />
       <v-row>
         <v-col class="">

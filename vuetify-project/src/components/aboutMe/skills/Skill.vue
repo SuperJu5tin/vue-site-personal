@@ -1,33 +1,29 @@
 <script setup lang="ts">
 
-type Skill = {
-  name:string,
-  level:string,
-  numericPercent:number
-}
+  type Skill = {
+    name:string,
+    level:string,
+    numericPercent:number
+  }
 
-const props = defineProps<{ skill:Skill }>()
-const percent = `${props.skill.numericPercent + 3}%`
+  const props = defineProps<{ skill:Skill }>()
+  const percent = `${props.skill.numericPercent + 3}%`
 
 </script>
 
 <template>
-  <!-- <div class="skill-container"> -->
-  <div class="skill-name">
-    <p >
-      {{skill.name}} 
-    </p>
-  </div>
-  <div class="skill-level">
-    <p>
-      {{skill.level}}
-    </p>
-  </div>
-  <!-- </div> -->
-  <div class="skill-bar">
-    <div class="skill-bar-filled"></div>  
-  </div>
-  
+  <v-container>
+    <v-col class="text-h5 my-2">
+      {{ skill.name }}
+    </v-col>
+    <v-progress-linear
+      color="blue-lighten-3"
+      height="10"
+      :model-value="skill.numericPercent"
+      rounded
+    />
+  </v-container>
+
 </template>
 
 <style scoped>
@@ -40,7 +36,6 @@ const percent = `${props.skill.numericPercent + 3}%`
 
 .skill-name {
   justify-self: right;
-  /* margin-right: .2rem; */
 }
 
 .skill-level {
@@ -48,13 +43,10 @@ const percent = `${props.skill.numericPercent + 3}%`
   padding-inline: .3rem;
   border-left:dotted 1px;
   border-right:dotted 1px;
-  /* margin-left: .2rem; */
 }
 
 .skill-bar {
-  flex: 1;
-  /* margin-left: .3rem; */
-  height: 20px;
+  width: max(10rem, 15vw);
   background-color: #d7fedc;
   border-radius: 10px;
   overflow: hidden;
