@@ -1,19 +1,27 @@
 <script setup lang="ts">
 
-import pictureOfMe from "../assets/meSinging.webp"
+  import pictureOfMe from '@/assets/meSinging.webp'
 
 </script>
 
 <template>
-    <div class="home-container">
-      <div class="picture-container">
-        <img class="picture-me" alt="A picture of Justin" :src="pictureOfMe"/>
-      </div>
-      <div class="blurb-container">
-        <h1 class="title-text">Hello, I am Justin Libhart</h1>
-        <p><span></span>Currently a student at both Warren Tech and Standley Lake High School. I am a hard-working learner, always open to new ways to do things more efficiently. I love working on projects and finding different ways to make my brain hurt. With an extensive knowledge of general Information Technology, from Coding to DevOps to physical Hardware.</p>
-      </div>
-    </div>
+  <v-container class="my-15">
+    <v-row class="ga-15">
+      <v-col>
+        <v-img alt="A picture of Justin" class="rounded-lg elevation-15" :src="pictureOfMe" />
+      </v-col>
+      <v-col class="my-auto">
+        <v-row class="text-h4 justify-center align-center">Hello, I am Justin Libhart</v-row>
+        <v-divider class="my-5" thickness="3" />
+        <v-row class="text-subtitle-1">
+          Currently a student at both Warren Tech and Standley Lake High School. I am a hard-working learner,
+          always open to new ways to do things more efficiently. I love working on projects and finding different ways
+          to make my brain hurt. With an extensive knowledge of general Information Technology, from Coding to DevOps
+          to physical Hardware.
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <style scoped>

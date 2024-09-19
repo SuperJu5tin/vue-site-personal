@@ -1,13 +1,14 @@
 <script setup lang="ts">
 
-type Skill = {
-  name:string,
-  level:string,
-  numericPercent:number
-}
-
-const props = defineProps<{ skill:Skill }>()
-const percent = `${props.skill.numericPercent + 3}%`
+  type Skill = {
+    name:string,
+    level:string,
+    numericPercent:number
+  }
+  
+  // eslint-disable-next-line no-undef
+  const props = defineProps<{ skill:Skill }>()
+  const percent = `${props.skill.numericPercent + 3}%`
 
 </script>
 

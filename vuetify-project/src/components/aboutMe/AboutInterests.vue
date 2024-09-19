@@ -34,7 +34,7 @@
 </script>
 
 <template>
-  <v-card class="interests rounded-lg pa-5 elevation-15">
+  <v-card class="rounded-lg pa-5 elevation-15">
     <v-container>
       <v-row class="text-h3 justify-center my-1">My Biggest Interests</v-row>
       <v-divider class="my-5" thickness="3" />

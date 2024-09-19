@@ -14,8 +14,6 @@ declare module 'vue' {
     CardPreset: typeof import('./components/aboutMe/cards/CardPreset.vue')['default']
     CatergorizedCards: typeof import('./components/aboutMe/cards/CatergorizedCards.vue')['default']
     Certs: typeof import('./components/Certs.vue')['default']
-    Foot: typeof import('./components/Foot.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Home: typeof import('./components/Home.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     NotesAboutMe: typeof import('./components/aboutMe/NotesAboutMe.vue')['default']

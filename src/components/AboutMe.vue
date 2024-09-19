@@ -12,12 +12,12 @@ import PrevalentSkills from './aboutMe/PrevalentSkills.vue';
   <v-row class="ga-10 my-10 px-10">
     <v-col>
       <v-row class="ga-10 justify-center">
+        <NotesAboutMe />test
         <PrevalentSkills />
-        <NotesAboutMe />
       </v-row>
     </v-col>
     <v-col>
-      <v-row class="justify-center">
+      <v-row class="justify-center align-space-around">
         <AboutInterests />
       </v-row>
     </v-col>

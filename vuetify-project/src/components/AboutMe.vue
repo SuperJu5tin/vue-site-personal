@@ -7,13 +7,20 @@
 </script>
 
 <template>
-  <v-row class="ga-10 my-10 px-10">
+  <v-row class="ga-10 my-10 px-15">
+
     <v-col>
-      <v-row class="ga-10 justify-space-evenly">
+      <v-row class="justify-center">
         <PrevalentSkills />
+      </v-row>
+    </v-col>
+
+    <v-col>
+      <v-row class="justify-center">
         <NotesAboutMe />
       </v-row>
     </v-col>
+
     <v-col>
       <v-row class="justify-center">
         <AboutInterests />
