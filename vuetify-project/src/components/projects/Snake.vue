@@ -2,56 +2,27 @@
 
 // import snakePic from "../../assets/snake.webp"
 
-const sideLength = "max(210px, 25vmin)"
-const sideLength2 = "max(550px, 70vmin)"
-const sideLength3 = "max(500px, 60vmin)"
-
+  const sideLength = 'max(210px, 25vmin)'
+  const sideLength2 = 'max(550px, 70vmin)'
+  const sideLength3 = 'max(500px, 60vmin)'
 
 </script>
 
 <template>
-  <div class="snake-container">
-    <div class="basic-overlap box-one">
-      <h1 >Github</h1>
-      <!-- <Divider flexItem></Divider> -->
-      <p >Two github repositories</p>
-      <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Compiled.git">Compiled Languages</a>
-      <a target='_blank' href="https://github.com/SuperJu5tin/Snake_Interpreted.git">Interpreted Languages</a>
-    </div>
-    <div class="basic-overlap box-two">
-      <h1>Snake</h1>
-      <!-- <Divider flexItem></Divider> -->
-      <p>A basic game of snake in multiple languages: Javascript, C,
-        Python, and Rust. </p>
-    </div>
-    <div class="basic-overlap box-three">
-      <div class="open-modal">
-        <button class="button-two">Open Example</button>
-        <h3>Keyboard Required</h3>
-      </div>
-      <!-- <Modal class="modal-style" open={open} onClose={handleClose}>
-        <div sx={{display:"flex", flexDirection:"column", justifyItems:"center", alignItems:"center",
-          justifyContent:"center"}}>
-          <div sx={{display:"inline-flex"}}>
-            <h2 style={{fontFamily: '"Gloria Hallelujah", cursive' }}><a style={{textDecoration:"none", }}
-                target='_blank' href="/snake/index.html">Open In New Tab</a></h2>
-            <button sx={{ marginLeft:"10px", fontSize:"20px", fontFamily: '"Gloria Hallelujah", cursive' }}
-              onClick={handleClose}>Close</button>
-          </div>
-          <div>
-            <iframe style={{width:sideLength3, height:sideLength3}} src="/snake/index.html"></iframe>
-          </div>
-        </div>
-      </Modal> -->
-      <!-- <a target='_blank' style="width:70%; height:70%;" href="/snake/index.html" aria-label="View Justin's basic Javascript/HTML Snake Game">
-        <img :src='snakePic' style="width:100%; height:100%;" />
-      </a> -->
-    </div>
-  </div>
+  <v-card class="color-one">
+    <v-container>
+      <v-row>
+        <v-card-title class="justify-center">Snake</v-card-title>
+      </v-row>
+    </v-container>
+  </v-card>
 </template>
 
 <style scoped>
 
+.color-one {
+  background-color: #8ae4dc;
+}
 .snake-container {
   display: flex;
   flex-direction: row;

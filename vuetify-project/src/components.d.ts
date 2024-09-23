@@ -11,10 +11,12 @@ declare module 'vue' {
     AboutMe: typeof import('./components/AboutMe.vue')['default']
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     BetweenPage: typeof import('./components/BetweenPage.vue')['default']
-    CardPreset: typeof import('./components/aboutMe/cards/CardPreset.vue')['default']
-    CatergorizedCards: typeof import('./components/aboutMe/cards/CatergorizedCards.vue')['default']
+    CardPreset: typeof import('./components/aboutMe/interestCards/CardPreset.vue')['default']
+    CatergorizedCards: typeof import('./components/aboutMe/interestCards/CatergorizedCards.vue')['default']
     Certs: typeof import('./components/Certs.vue')['default']
     Home: typeof import('./components/Home.vue')['default']
+    MuscialFeats: typeof import('./components/aboutMe/MuscialFeats.vue')['default']
+    MusicalFeats: typeof import('./components/aboutMe/MusicalFeats.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     NotesAboutMe: typeof import('./components/aboutMe/NotesAboutMe.vue')['default']
     Portfolio: typeof import('./components/Portfolio.vue')['default']
@@ -23,5 +25,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     Skill: typeof import('./components/aboutMe/skills/Skill.vue')['default']
     Snake: typeof import('./components/projects/Snake.vue')['default']
+    SportFeats: typeof import('./components/aboutMe/SportFeats.vue')['default']
   }
 }
