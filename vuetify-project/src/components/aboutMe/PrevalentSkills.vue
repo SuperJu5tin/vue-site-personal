@@ -28,11 +28,11 @@
 </script>
 
 <template>
-  <v-card class="pa-3 rounded-lg elevation-15">
+  <v-card class="pa-3 rounded-lg elevation-15" color="card">
     <v-container>
       <v-row class="text-h3 justify-center my-1">Skills</v-row>
       <v-divider />
-      <v-row class="test">
+      <v-row class="two-column">
         <Skill v-for="skill in skills" :key="skill.name" :skill="skill" />
       </v-row>
     </v-container>
@@ -63,7 +63,7 @@
     gap: .3rem;
     align-items: center;
   }
-  .test {
+  .two-column {
     display: grid;
     grid-template-columns : 1fr 1fr;
   }

@@ -42,7 +42,6 @@
 <template>
   <v-row class="my-5">
     <v-btn
-      class="button-styled button-two"
       color="primary"
       variant="plain"
       @clear-local-storage="checkCards"
