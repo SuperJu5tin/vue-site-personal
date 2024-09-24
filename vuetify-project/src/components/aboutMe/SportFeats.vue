@@ -7,40 +7,21 @@
 <template>
   <v-card class="pa-3 rounded-lg elevation-15">
     <v-container>
-      <v-row class="text-h3 justify-center my-1">Noteable Feats</v-row>
+      <v-row class="text-h3 justify-center my-1">Sport Feats</v-row>
       <v-divider class="my-5" thickness="3" />
       <v-row>
         <v-col class="">
-          <v-card-subtitle class="text-h5">Musical Talents</v-card-subtitle>
-          <v-list class="mx-5">
-            <v-list-item>Tuba</v-list-item>
-            <v-list-item>Trombone</v-list-item>
-            <v-list-item>Euphonium</v-list-item>
-          </v-list>
-          <v-card-subtitle class="text-h6">Bands played in</v-card-subtitle>
-          <v-list class="mx-5">
-            <v-list-item>Wind Ensemble</v-list-item>
-            <v-list-item>Concert Band</v-list-item>
-            <v-list-item>Musical Pit</v-list-item>
-            <v-list-item>Sig Jazz</v-list-item>
-            <v-list-item>Gator Blues Jazz</v-list-item>
+          <v-list>
+            <v-list-item>2 Years of Track and Field</v-list-item>
+            <v-list-item>3 Years of Cross Country</v-list-item>
           </v-list>
         </v-col>
         <v-divider class="d-none d-sm-block" inset vertical />
         <v-divider class="d-block d-sm-none" />
         <v-col class="">
-          <v-card-subtitle class="text-h5">Sports</v-card-subtitle>
-          <v-list class="mx-5">
-            <v-list-item>2 Years of Track and Field</v-list-item>
-            <v-list-item>3 Years of Cross Country</v-list-item>
-          </v-list>
-          <v-card-subtitle class="text-h6">Lettering</v-card-subtitle>
-          <v-list class="mx-5">
-            <v-list-item>2 Years in Cross Country</v-list-item>
-          </v-list>
-          <v-card-subtitle class="text-h6">Team Captain</v-card-subtitle>
-          <v-list class="mx-5">
-            <v-list-item>Team Captain for Cross Country during Senior Year</v-list-item>
+          <v-list>
+            <v-list-item>Lettered 2 Years in Cross Country</v-list-item>
+            <v-list-item>Cross Country Team Captain</v-list-item>
           </v-list>
           <v-img alt="The Cross Country Letter Icon" class="mt-5" :src="CC" />
         </v-col>
