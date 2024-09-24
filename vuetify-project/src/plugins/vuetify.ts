@@ -35,12 +35,12 @@ const light: ThemeDefinition = {
   colors: {
     background: colors.teal.lighten4,
     lighter: colors.teal.lighten3,
-    primary: colors.green.lighten1,
-    first: colors.cyan.darken4,
-    second: colors.cyan.darken3,
-    third: colors.cyan.accent4,
-    fourth: colors.teal.darken1,
-    fifth: colors.teal.accent4,
+    primary: colors.teal.darken4,
+    first: colors.cyan.lighten4,
+    second: colors.cyan.lighten3,
+    third: colors.cyan.accent3,
+    fourth: colors.cyan.accent2,
+    fifth: colors.lightBlue.lighten1,
     'about-me': colors.green.accent1,
     portfolio: colors.green.accent2,
     certifications: colors.green.accent3,
@@ -50,7 +50,6 @@ const light: ThemeDefinition = {
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
   theme: {
-    defaultTheme: 'dark',
     themes: {
       dark,
       light,
