@@ -28,7 +28,7 @@
 </script>
 
 <template>
-  <v-card class="pa-3 rounded-lg elevation-15" color="card">
+  <v-card class="pa-3 rounded-lg elevation-15" color="lighter">
     <v-container>
       <v-row class="text-h3 justify-center my-1">Skills</v-row>
       <v-divider />

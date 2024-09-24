@@ -18,6 +18,7 @@ const dark: ThemeDefinition = {
   colors: {
     background: colors.teal.darken4,
     lighter: colors.teal.darken3,
+    lighterStill: colors.teal.darken2,
     primary: colors.teal.accent3,
     first: colors.cyan.darken4,
     second: colors.cyan.darken3,
@@ -35,6 +36,7 @@ const light: ThemeDefinition = {
   colors: {
     background: colors.teal.lighten4,
     lighter: colors.teal.lighten3,
+    lighterStill: colors.teal.lighten2,
     primary: colors.teal.darken4,
     first: colors.cyan.lighten4,
     second: colors.cyan.lighten3,

@@ -6,54 +6,34 @@
 
 <template>
   <v-container class="my-15">
-    <!-- <v-row class="text-h3 justify-center align-center">
-      Past Projects
-      <v-divider />
-    </v-row> -->
     <v-row class="justify-center">
-      <v-card
-        elevation="24"
-      >
-        <v-stepper :items="['Project 1', 'Project 2', 'Project 3']">
+      <v-card color="lighter" elevation="24">
+        <v-stepper color="lighter" :items="['Project 1', 'Project 2', 'Project 3', 'Project 4']">
           <template #item.1>
-            <v-card flat title="Title One"><Snake /></v-card>
+            <v-card color="lighter" flat title="Project One">
+              <Snake />
+            </v-card>
           </template>
 
           <template #item.2>
-            <v-card flat title="Step Two">...</v-card>
+            <v-card color="lighter" flat title="Project Two">
+              <GameServers />
+            </v-card>
           </template>
 
           <template #item.3>
-            <v-card flat title="Step Three">...</v-card>
+            <v-card color="lighter" flat title="Project Three">
+              <ReactAboutMe />
+            </v-card>
+          </template>
+
+          <template #item.4>
+            <v-card color="lighter" flat title="Project Four">
+              <EnglishHerosJourney />
+            </v-card>
           </template>
         </v-stepper>
       </v-card>
     </v-row>
   </v-container>
 </template>
-
-<style scoped>
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  gap: 3em;
-  padding-block: 3em;
-  padding-inline: 1em;
-}
-
-.past-projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-.underline {
-  border-bottom: solid .1em;
-}
-
-</style>

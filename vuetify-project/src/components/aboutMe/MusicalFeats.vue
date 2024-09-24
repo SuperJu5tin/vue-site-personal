@@ -5,31 +5,34 @@
 </script>
 
 <template>
-  <v-card class="pa-3 rounded-lg elevation-15">
+  <v-card class="pa-3 rounded-lg elevation-15" color="lighter">
     <v-container>
       <v-row class="text-h3 justify-center my-1">Musical Feats</v-row>
       <v-divider class="my-5" thickness="3" />
       <v-row>
         <v-col class="">
           <v-card-subtitle>Instruments</v-card-subtitle>
-          <v-list>
-            <v-list-item>Tuba</v-list-item>
-            <v-list-item>Trombone</v-list-item>
-            <v-list-item>Euphonium</v-list-item>
-          </v-list>
+          <v-container class="ml-5">
+            <v-row>Tuba</v-row>
+            <v-row>Trombone</v-row>
+            <v-row>Euphonium</v-row>
+          </v-container>
           <v-img alt="The Tuba Icon" :src="Tuba" />
         </v-col>
         <v-divider class="d-none d-sm-block" inset vertical />
         <v-divider class="d-block d-sm-none" />
         <v-col>
           <v-card-subtitle>Bands</v-card-subtitle>
-          <v-list>
-            <v-list-item>Wind Ensemble</v-list-item>
-            <v-list-item>Concert Band</v-list-item>
-            <v-list-item>Musical Pit</v-list-item>
-            <v-list-item>Sig Jazz</v-list-item>
-            <v-list-item>Gator Blues Jazz</v-list-item>
-          </v-list>
+          <v-container>
+            <v-row>Wind Ensemble</v-row>
+            <v-row>Concert Band</v-row>
+            <v-row>Musical Pit</v-row>
+          </v-container>
+          <v-card-subtitle>Jazz</v-card-subtitle>
+          <v-container>
+            <v-row>Signature Jazz</v-row>
+            <v-row>Gator Blues</v-row>
+          </v-container>
         </v-col>
         <!-- <v-col>
           <v-card-subtitle class="text-h5 text-center">Experience</v-card-subtitle>
