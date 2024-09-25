@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-  import { ref } from 'vue';
+  import { ref } from 'vue'
   import type { Ref } from 'vue'
-  import Skill from './skills/Skill.vue';
+  import Skill from './skills/Skill.vue'
 
   type SkillType = {
     name:string,
@@ -15,7 +15,6 @@
   }
 
   const skills:Ref<Skills> = ref({})
-    
 
   const initializeSkills = () => {
     fetch('/api/about_me/skills.json')
@@ -29,13 +28,16 @@
 </script>
 
 <template>
-  <div class="skills">
-      <h1 class="skills-header">Skills</h1>
-      <div class="skills-container">
+  <v-card class="pa-3 rounded-lg elevation-15" color="lighter">
+    <v-container>
+      <v-row class="text-h3 justify-center my-1"><v-icon class="mr-5">mdi-code-tags</v-icon>Prevalent Skills</v-row>
+      <v-divider />
+      <v-row class="two-column">
         <Skill v-for="skill in skills" :key="skill.name" :skill="skill" />
-      </div>
+      </v-row>
+    </v-container>
 
-    </div>
+  </v-card>
 </template>
 
 <style scoped>
@@ -60,5 +62,9 @@
     grid-template-columns: .5fr 1fr 1fr;
     gap: .3rem;
     align-items: center;
+  }
+  .two-column {
+    display: grid;
+    grid-template-columns : 1fr 1fr;
   }
 </style>

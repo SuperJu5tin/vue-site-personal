@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  defineProps<{ name:string, color:string }>()
+  defineProps<{ name:string }>()
 
   const titleCase = (string:string) => {
     const firstLetter = string[0]
@@ -15,29 +15,17 @@
     for (const word of arrayWords) {
       words.push(titleCase(word))
     }
-    return words.join(" ")
+    return words.join(' ')
   }
 
 </script>
 
 <template>
-  <div class="next-page-container" :id="name" >
+  <v-card :id="name" class="pa-2 text-center" :color="name">
     <h1>{{ multipleWordsTitle("-", name) }}</h1>
-  </div>
+  </v-card>
 </template>
 
 <style scoped>
-
-.next-page-container {
-  padding:1.5em;
-  height:50px;
-  background:v-bind(color);
-  display:flex;
-  justify-content:center;
-  align-content:center;
-  align-items:center;
-  border-top:solid;
-  border-bottom:solid;
-}
 
 </style>

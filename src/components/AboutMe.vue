@@ -1,23 +1,20 @@
 <script setup lang="ts">
 
-import AboutInterests from './aboutMe/AboutInterests.vue';
-import NotesAboutMe from './aboutMe/NotesAboutMe.vue';
-import PrevalentSkills from './aboutMe/PrevalentSkills.vue';
-
-
-
 </script>
 
 <template>
-  <v-row class="ga-10 my-10 px-10">
-    <v-col>
-      <v-row class="ga-10 justify-center">
-        <NotesAboutMe />test
+  <v-row class="ga-10 my-10 px-15">
+
+    <v-col class="ga-10">
+      <v-row class="justify-center ga-10">
+        <SportFeats />
+        <MusicalFeats />
         <PrevalentSkills />
       </v-row>
     </v-col>
+
     <v-col>
-      <v-row class="justify-center align-space-around">
+      <v-row class="justify-center">
         <AboutInterests />
       </v-row>
     </v-col>
