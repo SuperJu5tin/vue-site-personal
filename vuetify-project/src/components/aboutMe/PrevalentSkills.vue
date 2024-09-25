@@ -30,7 +30,7 @@
 <template>
   <v-card class="pa-3 rounded-lg elevation-15" color="lighter">
     <v-container>
-      <v-row class="text-h3 justify-center my-1">Skills</v-row>
+      <v-row class="text-h3 justify-center my-1"><v-icon class="mr-5">mdi-code-tags</v-icon>Prevalent Skills</v-row>
       <v-divider />
       <v-row class="two-column">
         <Skill v-for="skill in skills" :key="skill.name" :skill="skill" />

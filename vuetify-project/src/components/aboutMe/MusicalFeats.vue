@@ -7,32 +7,35 @@
 <template>
   <v-card class="pa-3 rounded-lg elevation-15" color="lighter">
     <v-container>
-      <v-row class="text-h3 justify-center my-1">Musical Feats</v-row>
+      <v-row class="text-h3 justify-center my-1"><v-icon class="mr-5">mdi-music</v-icon>Musical Feats</v-row>
       <v-divider class="my-5" thickness="3" />
       <v-row>
-        <v-col class="">
-          <v-card-subtitle>Instruments</v-card-subtitle>
-          <v-container class="ml-5">
-            <v-row>Tuba</v-row>
-            <v-row>Trombone</v-row>
-            <v-row>Euphonium</v-row>
-          </v-container>
-          <v-img alt="The Tuba Icon" :src="Tuba" />
+        <v-col>
+          <v-list bg-color="lighterStill" class="mb-5">
+            <v-list-subheader>Instruments</v-list-subheader>
+            <v-list-item>Tuba</v-list-item>
+            <v-list-item>Trombone</v-list-item>
+            <v-list-item>Euphonium</v-list-item>
+            <v-list-item>
+              <v-list-item-media>
+                <v-img alt="The Tuba Icon" :src="Tuba" />
+              </v-list-item-media>
+            </v-list-item>
+          </v-list>
         </v-col>
         <v-divider class="d-none d-sm-block" inset vertical />
         <v-divider class="d-block d-sm-none" />
         <v-col>
-          <v-card-subtitle>Bands</v-card-subtitle>
-          <v-container>
-            <v-row>Wind Ensemble</v-row>
-            <v-row>Concert Band</v-row>
-            <v-row>Musical Pit</v-row>
-          </v-container>
-          <v-card-subtitle>Jazz</v-card-subtitle>
-          <v-container>
-            <v-row>Signature Jazz</v-row>
-            <v-row>Gator Blues</v-row>
-          </v-container>
+          <v-list bg-color="lighterStill">
+            <v-list-subheader>Bands</v-list-subheader>
+            <v-list-item>Wind Ensemble</v-list-item>
+            <v-list-item>Concert Band</v-list-item>
+            <v-list-item>Marching Band</v-list-item>
+            <v-list-item>Musical Pit</v-list-item>
+            <v-list-subheader>Jazz</v-list-subheader>
+            <v-list-item>Signature Jazz</v-list-item>
+            <v-list-item>Gator Blues</v-list-item>
+          </v-list>
         </v-col>
         <!-- <v-col>
           <v-card-subtitle class="text-h5 text-center">Experience</v-card-subtitle>

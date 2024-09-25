@@ -25,9 +25,9 @@ const dark: ThemeDefinition = {
     third: colors.cyan.accent4,
     fourth: colors.teal.darken1,
     fifth: colors.teal.accent4,
-    'about-me': colors.green.accent1,
-    portfolio: colors.green.accent2,
-    certifications: colors.green.accent3,
+    'about-me': colors.indigo.accent4,
+    portfolio: colors.indigo.darken1,
+    certifications: colors.indigo.darken3,
   },
 }
 
@@ -43,9 +43,9 @@ const light: ThemeDefinition = {
     third: colors.cyan.accent3,
     fourth: colors.cyan.accent2,
     fifth: colors.lightBlue.lighten1,
-    'about-me': colors.green.accent1,
-    portfolio: colors.green.accent2,
-    certifications: colors.green.accent3,
+    'about-me': colors.indigo.accent2,
+    portfolio: colors.indigo.lighten1,
+    certifications: colors.indigo.lighten3,
   },
 }
 
