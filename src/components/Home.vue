@@ -11,9 +11,9 @@
         <v-img alt="A picture of Justin" class="rounded-lg elevation-15" :src="pictureOfMe" />
       </v-col>
       <v-col class="my-auto">
-        <v-row class="text-h4 justify-center align-center">Hello, I am Justin Libhart</v-row>
+        <v-row class="text-h4 title text-center">Hello, I am Justin Libhart</v-row>
         <v-divider class="my-5" thickness="3" />
-        <v-row class="text-subtitle-1">
+        <v-row class="text-body-1">
           Currently a student at both Warren Tech and Standley Lake High School. I am a hard-working learner,
           always open to new ways to do things more efficiently. I love working on projects and finding different ways
           to make my brain hurt. With an extensive knowledge of general Information Technology, from Coding to DevOps

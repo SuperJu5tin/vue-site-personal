@@ -7,7 +7,7 @@
 <template>
   <v-card class="pa-3 rounded-lg elevation-15" color="lighter">
     <v-container>
-      <v-row class="text-h3 justify-center my-1"><v-icon class="mr-5">mdi-run-fast</v-icon>Sport Feats</v-row>
+      <v-row class="text-h3 justify-center text-center my-1"><v-icon class="mr-5">mdi-run-fast</v-icon>Sport Feats</v-row>
       <v-divider class="my-5" thickness="3" />
       <v-row>
         <v-col class="">

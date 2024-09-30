@@ -15,7 +15,6 @@ declare module 'vue' {
     CardPreset: typeof import('./components/aboutMe/interestCards/CardPreset.vue')['default']
     CatergorizedCards: typeof import('./components/aboutMe/interestCards/CatergorizedCards.vue')['default']
     Certs: typeof import('./components/Certs.vue')['default']
-    Education: typeof import('./components/experience/Education.vue')['default']
     EnglishHerosJourney: typeof import('./components/projects/EnglishHerosJourney.vue')['default']
     Experience: typeof import('./components/Experience.vue')['default']
     GameServers: typeof import('./components/projects/GameServers.vue')['default']
@@ -31,6 +30,5 @@ declare module 'vue' {
     Skill: typeof import('./components/aboutMe/skills/Skill.vue')['default']
     Snake: typeof import('./components/projects/Snake.vue')['default']
     SportFeats: typeof import('./components/aboutMe/SportFeats.vue')['default']
-    Work: typeof import('./components/experience/Work.vue')['default']
   }
 }

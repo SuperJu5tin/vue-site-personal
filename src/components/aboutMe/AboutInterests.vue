@@ -36,7 +36,7 @@
 <template>
   <v-card class="rounded-lg pa-5 elevation-15" color="lighter">
     <v-container>
-      <v-row class="text-h3 justify-center my-1">My Biggest Interests</v-row>
+      <v-row class="text-h3 text-center my-1">My Biggest Interests</v-row>
       <v-divider class="my-5" thickness="3" />
       <v-row class="text-subtitle-1 justify-center my-3">{{ listJoinDiffLast(Object.keys(interests), ", ", " and ") }}</v-row>
       <v-row class="justify-center my-3">
