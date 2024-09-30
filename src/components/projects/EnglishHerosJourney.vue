@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import webpagePic from '@/assets/reactHomePage.png'
+  import webpagePic from '@/assets/english-hero-journey.png'
 
 </script>
 
