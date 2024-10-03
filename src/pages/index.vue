@@ -1,6 +1,5 @@
 <script lang="ts" setup>
   // const colors = ['#89aedf', '#89dbdf', '#9cdf89']
-
 </script>
 
 <template>
@@ -11,5 +10,4 @@
   <Portfolio />
   <BetweenPage name="certifications" />
   <Certifications />
-  <!-- <AppFooter /> -->
 </template>

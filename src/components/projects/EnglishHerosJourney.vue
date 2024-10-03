@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import webpagePic from '@/assets/projects/english-hero-journey.png'
+  import webpagePic from '@/assets/projects/english-hero-journey.webp'
 
 </script>
 

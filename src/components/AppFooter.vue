@@ -19,7 +19,7 @@
       class="text-caption text-disabled"
       style="position: absolute; right: 16px;"
     >
-      &copy; 2024-{{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Justin, justinlibhart.xyz</span>
+      &copy; 2024-{{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Justin, justinlibhart.dev</span>
     </div>
   </v-footer>
 </template>
