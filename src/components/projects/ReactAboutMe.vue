@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import webpagePic from '@/assets/react-home-page.png'
+  import webpagePic from '@/assets/projects/react-home-page.png'
 
 </script>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import Tuba from '@/assets/music-tuba-by-Vexels.svg'
+  import Tuba from '@/assets/svgs/music-tuba-by-Vexels.svg'
 
 </script>
 

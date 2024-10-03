@@ -14,6 +14,7 @@ declare module 'vue' {
     BetweenPage: typeof import('./components/BetweenPage.vue')['default']
     CardPreset: typeof import('./components/aboutMe/interestCards/CardPreset.vue')['default']
     CatergorizedCards: typeof import('./components/aboutMe/interestCards/CatergorizedCards.vue')['default']
+    Certifications: typeof import('./components/Certifications.vue')['default']
     Certs: typeof import('./components/Certs.vue')['default']
     EnglishHerosJourney: typeof import('./components/projects/EnglishHerosJourney.vue')['default']
     Experience: typeof import('./components/Experience.vue')['default']

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import CC from '@/assets/cc.svg'
+  import CC from '@/assets/svgs/cc.svg'
 
 </script>
 
@@ -25,22 +25,6 @@
           </v-list>
           <v-img alt="The Cross Country Letter Icon" class="mt-5" :src="CC" />
         </v-col>
-        <!-- <v-col>
-          <v-card-subtitle class="text-h5 text-center">Experience</v-card-subtitle>
-          <v-divider />
-          <v-row class="ga-5 mt-4">
-            <v-card class="elevation-5">
-              <v-card-title>Irrigation Specialist - Reliable Helpers</v-card-title>
-              <v-card-subtitle>May 2020 - August 2023</v-card-subtitle>
-              <v-card-item>Led irrigation based projects</v-card-item>
-            </v-card>
-            <v-card class="elevation-5">
-              <v-card-title>IT Internship - Westminster City Hall</v-card-title>
-              <v-card-subtitle>Jun 2024 - August 2024</v-card-subtitle>
-              <v-card-item>Replaced a static website with a webapp for City of Westminster, made to simulate a walking tour of Westminster. Found at <a href="" target="_blank">Walk</a></v-card-item>
-            </v-card>
-          </v-row>
-        </v-col> -->
       </v-row>
     </v-container>
   </v-card>

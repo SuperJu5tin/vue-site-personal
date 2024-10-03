@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import snakePic from '@/assets/snake.webp'
+  import snakePic from '@/assets/projects/snake.webp'
 
 </script>
 
