@@ -10,6 +10,6 @@
   <BetweenPage name="portfolio" />
   <Portfolio />
   <BetweenPage name="certifications" />
-  <Certs />
+  <Certifications />
   <!-- <AppFooter /> -->
 </template>
