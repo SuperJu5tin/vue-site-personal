@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import pictureOfMe from '@/assets/meSinging.webp'
+  import picOfMe from '@/assets/meWithTree.webp'
 
 </script>
 
@@ -8,7 +8,7 @@
   <v-container class="my-15">
     <v-row class="ga-15">
       <v-col>
-        <v-img alt="A picture of Justin" class="rounded-lg elevation-15" :src="pictureOfMe" />
+        <v-img alt="A picture of Justin" class="rounded-lg elevation-15" :src="picOfMe" />
       </v-col>
       <v-col class="my-auto">
         <v-row class="text-h4 title text-center">Hello, I am Justin Libhart</v-row>

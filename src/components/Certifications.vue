@@ -2,6 +2,7 @@
 
   import javascriptCertification from '@/assets/certifications/jse.webp'
   import pythonCertification from '@/assets/certifications/pcep.webp'
+  import comptiaAPlussCertification from '@/assets/certifications/comptia/aplus.webp'
 
 </script>
 
@@ -26,6 +27,14 @@
             <v-img
               alt="JSE - Certified Entry-Level JavaScript Programmer Certification"
               :src="javascriptCertification"
+            />
+          </a>
+        </v-carousel-item>
+        <v-carousel-item>
+          <a href="https://www.credly.com/badges/fa8386b3-6a9a-4868-87d0-762728d3efab/public_url" target="_blank">
+            <v-img
+              alt="PCEP - Certified Entry-Level Python Programmer Certification"
+              :src="comptiaAPlussCertification"
             />
           </a>
         </v-carousel-item>
