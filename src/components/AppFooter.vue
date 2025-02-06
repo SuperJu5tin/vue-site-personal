@@ -41,6 +41,16 @@
       icon: `mdi-linkedin`,
       href: 'https://www.linkedin.com/in/justin-libhart-798498304/',
     },
+    {
+      title: 'Credly',
+      icon: `mdi-alpha-c-box`,
+      href: 'https://www.credly.com/users/justin-libhart',
+    },
+    {
+      title: 'Instagram',
+      icon: `mdi-instagram`,
+      href: 'https://www.instagram.com/justinlibhart/',
+    },
   ]
 </script>
 

@@ -9,7 +9,7 @@
       <v-row class="justify-center ga-10">
         <SportFeats />
         <MusicalFeats />
-        <PrevalentSkills />
+        <!-- <PrevalentSkills /> -->
       </v-row>
     </v-col>
 

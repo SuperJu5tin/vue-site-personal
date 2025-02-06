@@ -17,10 +17,12 @@
     </template> -->
     <v-app-bar-title>Justin Libhart</v-app-bar-title>
     <template #append>
+      <v-btn href="https://justin.libhart.dev">Home</v-btn>
+      <v-btn href="https://vue.libhart.dev">Vue</v-btn>
+      <v-btn href="https://react.libhart.dev">React</v-btn>
       <v-switch
         v-model="darkMode"
         class="mt-5 mr-5"
-        label="Toggle Theme"
         @change="toggleTheme()"
       />
     </template>
