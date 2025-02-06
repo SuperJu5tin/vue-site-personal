@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  import snakePic from '@/assets/projects/snake.webp'
+  import gameServersPic from '@/assets/projects/game-servers.png'
 
 </script>
 
@@ -25,7 +25,7 @@
           </v-row>
         </v-col>
         <v-col>
-          <v-img :src="snakePic" />
+          <v-img :src="gameServersPic" />
         </v-col>
       </v-row>
     </v-container>
